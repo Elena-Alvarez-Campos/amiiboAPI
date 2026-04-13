@@ -31,8 +31,17 @@ p{
     padding-bottom: 2vh;
     display: none;
 }
+.juegosAmiibo{
+    display: flex;
+    gap: 2vh;
+    z-index: 1;
+    padding: 0vh 2vh;
+    padding-bottom: 2vh;
+    display: none;
+}
 body{
     background-color: rgb(255, 173, 176);
+    background-image: url(img/thumb-1920-1374972.jpg);
     padding: 1vh 5vh;
 }
 .saga{
@@ -51,12 +60,13 @@ body{
 .busca{
     font-family: "Mulish", sans-serif;
     font-weight: bold;
-    background-color: rgb(255, 255, 255) ;
+    color:white;
+    background-color:rgb(57, 149, 70) ;
     border-radius: 50px;
-    border-color: rgb(12, 82, 21);
+    border-color: rgb(40, 196, 60);
     /*border-style: solid;*/
     height: 5vh;
-    color:rgb(12, 82, 21);
+    
     padding-left: 2vh;
     padding-right: 2vh;
     margin-bottom: 2vh;
@@ -67,7 +77,11 @@ article{
     background-color: rgb(255, 255, 255);
     min-height: 50vh;
     border-radius: 5vh;
-    padding: 3vh 3vh
+    padding: 3vh 3vh;
+    border-style: solid;
+    border-color: rgb(255, 173, 176);
+    border-width: 0.5vh;
+
 }
 .amiibos{
     
@@ -80,13 +94,14 @@ article{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     width:90%;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(255, 173, 176);
     border-radius: 50px;
+    border-width: 0.5vh;
     margin-top: 3vh;
     padding: 2vh 5vh;
 }
