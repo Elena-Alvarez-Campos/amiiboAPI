@@ -192,4 +192,11 @@ for(let cadaAmiibo of data.amiibo){
         txt+=cadaAmiibo.amiiboSeries+" "
     }
 }
-console.log(txt)
+//console.log(txt)
+//let nombre=$("<div>",{class:"nombre"}).text("")
+        for(let cadaAmiibo of data.amiibo){
+            //let estructura=$("<div>",{class:"ejemplo"})
+            nombre.text(cadaAmiibo.character)
+            //estructura.append(nombre)
+            //$(article).append(estructura)
+        }

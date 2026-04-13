@@ -1,4 +1,6 @@
 .menu{
+    padding: 0vh 2vh;
+    padding-top: 1vh;
     cursor: pointer;
     transition: transform .25s ease-in-out;
     z-index: 2;
@@ -9,31 +11,57 @@ h2{
     font-family: "Baumans", system-ui;
     padding:0;
 }
+header p{
+    padding-bottom: 3vh;
+}
+.imagen{
+    max-height: 10vh;
+}
 p{
     font-family: "Libre Franklin", sans-serif;
     text-align: center;
+    margin:0
 }
 .listaJ{
     /*transition: transform .35s ease-in-out;*/
+    display: flex;
+    gap: 2vh;
     z-index: 1;
+    padding: 0vh 2vh;
+    padding-bottom: 2vh;
     display: none;
 }
 body{
     background-color: rgb(255, 173, 176);
     padding: 1vh 5vh;
 }
-.completado{
+.saga{
     font-family: "Mulish", sans-serif;
     font-weight: bold;
     background-color: rgb(255, 255, 255) ;
     border-radius: 50px;
-    border-color: rgb(255, 173, 176);
+    border-color: rgb(121, 121, 121);
     /*border-style: solid;*/
     height: 5vh;
-    color:rgb(255, 173, 176);
+    color:rgb(121, 121, 121);
     padding-left: 2vh;
     padding-right: 2vh;
     cursor: pointer;
+}
+.busca{
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 50px;
+    border-color: rgb(12, 82, 21);
+    /*border-style: solid;*/
+    height: 5vh;
+    color:rgb(12, 82, 21);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    margin-right: 100%;
 }
 article{
     background-color: rgb(255, 255, 255);
@@ -41,8 +69,45 @@ article{
     border-radius: 5vh;
     padding: 3vh 3vh
 }
+.amiibos{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ejemplo{
+    min-height: 3vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width:90%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 173, 176);
+    border-radius: 50px;
+    margin-top: 3vh;
+    padding: 2vh 5vh;
+}
+.flecha{
+    cursor:pointer
+}
+.flecha.activo{
+    rotate: 180deg;
+}
 
-
+/*Funciones que usa jQuery*/
+.select{
+    border-color: rgb(165, 42, 128);
+    color:rgb(165, 42, 128);
+    background-color: rgba(204, 50, 171, 0.363);
+    
+}
 .activo{
+    
     display: block;
+}
+.categoria.activo{
+    background-color: beige;
 }
