@@ -1,0 +1,48 @@
+.menu{
+    cursor: pointer;
+    transition: transform .25s ease-in-out;
+    z-index: 2;
+}
+h2{
+    text-align: center;
+    font-size:xx-large;
+    font-family: "Baumans", system-ui;
+    padding:0;
+}
+p{
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+.listaJ{
+    /*transition: transform .35s ease-in-out;*/
+    z-index: 1;
+    display: none;
+}
+body{
+    background-color: rgb(255, 173, 176);
+    padding: 1vh 5vh;
+}
+.completado{
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 50px;
+    border-color: rgb(255, 173, 176);
+    /*border-style: solid;*/
+    height: 5vh;
+    color:rgb(255, 173, 176);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    cursor: pointer;
+}
+article{
+    background-color: rgb(255, 255, 255);
+    min-height: 50vh;
+    border-radius: 5vh;
+    padding: 3vh 3vh
+}
+
+
+.activo{
+    display: block;
+}
