@@ -1,3 +1,6 @@
+p{
+    font-family: "Libre Franklin", sans-serif;
+}
 .menu{
     padding: 0vh 3vh;
     padding-top: 1vh;
@@ -5,6 +8,11 @@
     transition: transform .25s ease-in-out;
     z-index: 2;
     height: 4vh;
+}
+.cabeza p{
+    text-align: center;
+    font-weight: bold;
+    
 }
 header{
     background-color: rgb(255, 173, 176);
@@ -28,8 +36,11 @@ h2{
 }
 p{
     font-family: "Libre Franklin", sans-serif;
-    text-align: center;
+    
     margin:0
+}
+.cabeza.oscuro{
+    background-color: transparent;
 }
 .listaJ{
     /*transition: transform .35s ease-in-out;*/
@@ -55,10 +66,13 @@ body{
     margin:0;
     padding-bottom: 4vh;
 }
+body.oscuro{
+    background-image: url(img/1000066327.png);
+}
 .saga{
     font-family: "Mulish", sans-serif;
     font-weight: bold;
-    background-color: rgb(255, 255, 255) ;
+    background-color: transparent ;
     border-radius: 50px;
     border-color: rgb(121, 121, 121);
     /*border-style: solid;*/
@@ -66,7 +80,33 @@ body{
     color:rgb(121, 121, 121);
     padding-left: 2vh;
     padding-right: 2vh;
+    margin: 0.5vh 0.5vh;
     cursor: pointer;
+}
+.saga.oscuro{
+    border-color:#ffadb0 ;
+}
+.saga.oscuro.select{
+    border-color: rgb(192, 84, 159);
+    color:#ff80c6;
+    background-color: rgba(204, 50, 171, 0.363)
+}
+.consola{
+    display: flex;
+    align-items: center;
+    width: auto;
+    text-decoration: dashed;
+    font-family: "Baumans", system-ui;
+    font-weight: bold;
+    background-color: rgba(255, 165, 165, 0.205) ;
+    
+    border-bottom-style:solid;
+    height: 5vh;
+    color: rgb(255, 117, 122);
+    border-color:rgb(255, 173, 176);
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin: 1vh 0vh;
 }
 .busca{
     font-family: "Mulish", sans-serif;
@@ -83,6 +123,7 @@ body{
     margin-bottom: 2vh;
     cursor: pointer;
     margin-right: 100%;
+    margin-top: 2vh;
 }
 article{
     background-color: rgb(255, 255, 255);
@@ -92,8 +133,8 @@ article{
     border-style: solid;
     border-color: rgb(255, 173, 176);
     border-width: 0.5vh;
-
 }
+
 .amiibos{
     
     display: flex;
@@ -101,12 +142,6 @@ article{
     align-items: center;
 }
 .ejemplo{
-    min-height: 3vh;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
     width:90%;
     border-width: 1px;
     border-style: solid;
@@ -116,13 +151,32 @@ article{
     margin-top: 3vh;
     padding: 2vh 5vh;
 }
+.nombre{
+    max-width: 10vh;
+}
+.contenidoEj{
+    min-height: 3vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.txt{
+    font-family: "Baumans", system-ui;
+    display: none;
+    padding-top: 2vh;
+}
+.txt.activo{
+    display:block;
+}
 .flecha{
     cursor:pointer
 }
 .flecha.activo{
     rotate: 180deg;
 }
-
 /*Funciones que usa jQuery*/
 .select{
     border-color: rgb(165, 42, 128);
@@ -133,10 +187,17 @@ article{
 .activo{
     
     display: block;
-}
+}/*
 .categoria.activo{
-    background-color: beige;
+    background-color: rgba(255, 173, 176, 0.295);
+}*/
+/*Modo oscuro*/
+.oscuro{
+    background-color: #46152F;
+    color:rgb(255, 173, 176);
 }
+
+/*Hacerlo responsive*/
 @media (max-width: 820px) {
   body{
     padding: 0vh 2vh;
