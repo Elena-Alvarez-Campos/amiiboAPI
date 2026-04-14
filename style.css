@@ -171,7 +171,7 @@ article{
 .txt.activo{
     display:block;
 }
-.flecha{
+.contenidoEj{
     cursor:pointer
 }
 .flecha.activo{
@@ -193,10 +193,13 @@ article{
 }*/
 /*Modo oscuro*/
 .oscuro{
+    /*transition:  0.3s ease;*/
     background-color: #46152F;
     color:rgb(255, 173, 176);
 }
-
+.modo{
+    cursor: pointer;
+}
 /*Hacerlo responsive*/
 @media (max-width: 820px) {
   body{

@@ -64,18 +64,24 @@ $(document).ready(function(){
         }
 
     })
+    //Mostrar las categorías
     $(".menu").click(function(){
+        $(".listaJ").slideToggle(500)
         $(".listaJ").toggleClass("activo")
+        
         $(".categoria").toggleClass("activo")
     })
 
     //Flecha cada amiibo
-    $(document).on("click",".flecha",function(){
-        $(this).toggleClass("activo")
-        $(this).parent().siblings().toggleClass("activo");
+    $(document).on("click",".contenidoEj",function(){
+        $(this).find(".flecha").toggleClass("activo")
+        $(this).siblings().slideToggle(500)
+        
+        $(this).siblings().toggleClass("activo");
     })
     //Modo oscuro y claro
     $(".modo").click(function(){
+        
         $(this).toggleClass("oscuro")
         $("article").toggleClass("oscuro")
         $(".flecha").toggleClass("oscuro")
