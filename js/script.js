@@ -63,7 +63,7 @@ $(document).ready(function(){
 
     //buscar amiibos
     $(document).on("click",".busca",function(){
-          $(".amiibos").empty();
+        $(".amiibos").empty();
         for(let posicion of listaSeleccionados){
             let enlace="https://amiiboapi.org/api/amiibo/?amiiboSeries="+listaJuegos[posicion]
             $.getJSON(enlace,function(data){

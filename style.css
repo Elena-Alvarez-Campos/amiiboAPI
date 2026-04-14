@@ -1,18 +1,27 @@
 .menu{
-    padding: 0vh 2vh;
+    padding: 0vh 3vh;
     padding-top: 1vh;
     cursor: pointer;
     transition: transform .25s ease-in-out;
     z-index: 2;
+    height: 4vh;
+}
+header{
+    background-color: rgb(255, 173, 176);
+    height: 3vh;
 }
 h2{
     text-align: center;
-    font-size:xx-large;
+    font-size:10vh;
     font-family: "Baumans", system-ui;
     padding:0;
+    margin:0;
+    padding-top: 3vh;
 }
-header p{
+.cabeza p{
+    padding-top: 0;
     padding-bottom: 3vh;
+    font-family: "Baumans", system-ui;
 }
 .imagen{
     max-height: 10vh;
@@ -42,7 +51,9 @@ p{
 body{
     background-color: rgb(255, 173, 176);
     background-image: url(img/thumb-1920-1374972.jpg);
-    padding: 1vh 5vh;
+    padding: 0vh 13vh;
+    margin:0;
+    padding-bottom: 4vh;
 }
 .saga{
     font-family: "Mulish", sans-serif;
@@ -125,4 +136,12 @@ article{
 }
 .categoria.activo{
     background-color: beige;
+}
+@media (max-width: 820px) {
+  body{
+    padding: 0vh 2vh;
+  }
+  .ejemplo{
+    width: 70%;
+  }
 }
